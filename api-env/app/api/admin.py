@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Usuario, Witte, Comentario
 
-# Register your models here.
+admin.site.register(Usuario)
+admin.site.register(Witte)
+admin.site.register(Comentario)

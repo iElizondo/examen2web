@@ -1,0 +1,15 @@
+.\env\Scripts\activate
+
+pip install django
+pip install cymysql
+pip install django-cymysql
+pip install djangorestframework
+
+# Crear la base de datos y el usuario con la siguiente información
+NAME: bd_witter,
+USER: witter,
+PASSWORD: witter,
+HOST: localhost,
+
+python manage.py migrate
+python manage.py createsuperuser
